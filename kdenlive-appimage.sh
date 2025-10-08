@@ -5,9 +5,7 @@ set -eux
 ARCH="$(uname -m)"
 URUNTIME="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/uruntime2appimage.sh"
 SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
-
-VERSION="$(pacman -Q kdenlive | awk '{print $2; exit}')"
-echo "$VERSION" > ~/version
+VERSION="$(cat ~/version)"
 
 export ADD_HOOKS="self-updater.bg.hook"
 export ICON=/usr/share/icons/hicolor/256x256/apps/kdenlive.png
