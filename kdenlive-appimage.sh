@@ -30,6 +30,7 @@ chmod +x ./quick-sharun
 	/usr/lib/libQt6QuickControls2Basic* \
 	/usr/lib/libbz2.so*                 \
 	/usr/lib/kf6/*                      \
+	/usr/lib/mlt*/*                     \
 	"$PLUGIN_DIR"/kcdm_trash.so         \
 	"$PLUGIN_DIR"/kfileaudiopreview.so  \
 	"$PLUGIN_DIR"/texttospeech/*        \
