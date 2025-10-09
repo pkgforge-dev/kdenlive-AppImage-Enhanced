@@ -32,6 +32,6 @@ chmod +x ./get-debloated-pkgs.sh
 ./get-debloated-pkgs.sh --add-common intel-media-driver-mini
 
 # don't let qt6-webengine be bundled
-pacman -Rsndd qt6-webengine
+pacman -Rsndd --noconfirm qt6-webengine
 
 pacman -Q kdenlive | awk '{print $2; exit}' > ~/version
