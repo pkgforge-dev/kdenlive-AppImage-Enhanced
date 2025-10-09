@@ -1,7 +1,7 @@
 # kdenlive-AppImage-Enhanced 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/kdenlive-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/kdenlive-AppImage-Enhanced/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/kdenlive-AppImage-Enhanced/actions/workflows/stable.yml/badge.svg)](https://github.com/pkgforge-dev/kdenlive-AppImage-Enhanced/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/kdenlive-AppImage-Enhanced/actions/workflows/blank.yml/badge.svg)](https://github.com/pkgforge-dev/kdenlive-AppImage-Enhanced/releases/latest)
 
 Improved AppImage of kdenlive **independent of the host libc** which makes able to work on very very old distros as well as musl-libc distros like alpine linux. 
 
