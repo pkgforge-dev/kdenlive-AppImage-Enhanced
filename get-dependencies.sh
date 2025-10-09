@@ -31,4 +31,7 @@ wget --retry-connrefused --tries=30 "$EXTRA_PACKAGES" -O ./get-debloated-pkgs.sh
 chmod +x ./get-debloated-pkgs.sh
 ./get-debloated-pkgs.sh --add-common intel-media-driver-mini
 
+# don't let qt6-webengine be bundled
+pacman -Rsndd qt6-webengine
+
 pacman -Q kdenlive | awk '{print $2; exit}' > ~/version
