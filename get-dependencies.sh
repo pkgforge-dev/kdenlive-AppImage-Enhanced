@@ -8,6 +8,7 @@ EXTRA_PACKAGES="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImage
 pacman -Syu --noconfirm \
 	base-devel       \
 	curl             \
+	fuse3            \
 	git              \
 	kdenlive         \
 	kio-extras       \
