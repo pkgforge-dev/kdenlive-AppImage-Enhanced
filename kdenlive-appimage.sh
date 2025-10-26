@@ -14,6 +14,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export OUTNAME=kdenlive-"$VERSION"-anylinux-"$ARCH".AppImage
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1
+export OPTIMIZE_LAUNCH=1
 
 # Deploy dependencies
 PLUGIN_DIR=/usr/lib/qt6/plugins
