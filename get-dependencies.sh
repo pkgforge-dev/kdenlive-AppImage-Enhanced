@@ -26,6 +26,10 @@ pacman -Syu --noconfirm \
 	xorg-server-xvfb \
 	zsync
 
+if [ "$ARCH" = 'x86_64' ]; then
+		pacman -Syu --noconfirm libva-intel-driver
+fi
+
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 wget --retry-connrefused --tries=30 "$EXTRA_PACKAGES" -O ./get-debloated-pkgs.sh
