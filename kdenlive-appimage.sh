@@ -3,7 +3,6 @@
 set -eux
 
 ARCH="$(uname -m)"
-URUNTIME="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/uruntime2appimage.sh"
 SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
 VERSION="$(cat ~/version)"
 
@@ -59,9 +58,7 @@ for lib in $(find ./AppDir/lib/qt6/qml -type f -name '*.so*'); do
 done
 
 # MAKE APPIMAGE WITH URUNTIME
-wget --retry-connrefused --tries=30 "$URUNTIME" -O ./uruntime2appimage
-chmod +x ./uruntime2appimage
-./uruntime2appimage
+./quick-sharun --make-appimage
 
 mkdir -p ./dist
 mv -v ./*.AppImage* ./dist
