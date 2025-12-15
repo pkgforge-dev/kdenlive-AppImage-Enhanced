@@ -1,7 +1,7 @@
 # kdenlive-AppImage-Enhanced 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/kdenlive-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/kdenlive-AppImage-Enhanced/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/kdenlive-AppImage-Enhanced/actions/workflows/blank.yml/badge.svg)](https://github.com/pkgforge-dev/kdenlive-AppImage-Enhanced/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/kdenlive-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/kdenlive-AppImage-Enhanced/releases/latest)
 
 Improved AppImage of kdenlive **independent of the host libc** which makes able to work on very very old distros as well as musl-libc distros like alpine linux. 
 
@@ -21,7 +21,7 @@ It is possible that this appimage may fail to work with appimagelauncher, I reco
 
 * [soar](https://github.com/pkgforge/soar) `soar install kdenlive-enhanced`
 
-This appimage works without fuse2 as it can use fuse3 instead, it can also work without fuse at all thanks to the [uruntime](https://github.com/VHSgunzo/uruntime)
+This AppImage can work **without FUSE** at all thanks to the [uruntime](https://github.com/VHSgunzo/uruntime)
 
 <details>
   <summary><b><i>raison d'être</i></b></summary>
