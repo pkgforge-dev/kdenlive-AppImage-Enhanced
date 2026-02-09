@@ -12,7 +12,8 @@ pacman -Syu --noconfirm \
 	kio-extras      \
 	pipewire-audio  \
 	pipewire-jack   \
-	qt6ct
+	qt6ct           \
+	sdl2
 
 if [ "$ARCH" = 'x86_64' ]; then
 		pacman -Syu --noconfirm libva-intel-driver
