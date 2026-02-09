@@ -49,4 +49,4 @@ echo 'PACKAGE_TYPE=appimage'                                >> ./AppDir/.env
 quick-sharun --make-appimage
 
 # test the final app
-./quick-sharun --test ./dist/*.AppImage
+quick-sharun --test ./dist/*.AppImage
