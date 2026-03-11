@@ -7,9 +7,12 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
+	breeze          \
 	fuse3           \
 	kdenlive        \
+	kvantum         \
 	kio-extras      \
+	lxqt-qtplugin   \
 	pipewire-audio  \
 	pipewire-jack   \
 	qt6ct           \
