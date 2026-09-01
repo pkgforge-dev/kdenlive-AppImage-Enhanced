@@ -7,15 +7,17 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-	breeze          \
-	fuse3           \
-	kdenlive        \
-	kvantum         \
-	kio-extras      \
-	lxqt-qtplugin   \
-	pipewire-audio  \
-	pipewire-jack   \
-	qt6ct           \
+	breeze           \
+	fuse3            \
+	kdenlive         \
+	kimageformats    \
+	qt6-imageformats \
+	kvantum          \
+	kio-extras       \
+	lxqt-qtplugin    \
+	pipewire-audio   \
+	pipewire-jack    \
+	qt6ct            \
 	sdl2
 
 if [ "$ARCH" = 'x86_64' ]; then
