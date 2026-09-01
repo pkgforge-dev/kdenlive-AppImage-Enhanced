@@ -29,7 +29,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common intel-media-driver-mini
 
 # don't let qt6-webengine be bundled
-pacman -Rsndd --noconfirm qt6-webengine
+pacman -Rsndd --noconfirm qt6-webengine ffmpeg-mini
 
 # Comment this out if you need an AUR package
 #make-aur-package PACKAGENAME
